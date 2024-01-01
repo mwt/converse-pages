@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Chat - Converse</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/manifest.json" rel="manifest">
+    <meta name="description" content="Converse XMPP/Jabber Chat" />
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://cdn.conversejs.org/10.1.2/dist/converse.min.css">
+    <script src="https://cdn.conversejs.org/10.1.2/dist/converse.min.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body class="converse-fullscreen">
+    <noscript>You need to enable JavaScript to run the chat app.</noscript>
+    <div id="conversejs-bg"></div>
+    <script>
+        converse.initialize({
+            allow_non_roster_messaging: true,
+            allow_registration: false,
+            authentication: "login",
+            auto_away: 300,
+            auto_list_rooms: true,
+            auto_reconnect: true,
+            auto_subscribe: true,
+            bosh_service_url: "https://xmpp.mwt.me/http-bind",
+            discover_connection_methods: false,
+            locked_domain: "xmpp.mwt.me",
+            message_archiving: "always",
+            muc_domain: "groups.xmpp.mwt.me",
+            muc_nickname_from_jid: true,
+            muc_show_logs_before_join: true,
+            reuse_scram_keys: true,
+            view_mode: "fullscreen",
+            theme: "concord",
+            dark_theme: "concord",
+            //websocket_url: "wss://xmpp.mwt.me/xmpp-websocket"
+        });
+    </script>
+</body>
+
+</html>
