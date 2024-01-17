@@ -27,6 +27,6 @@
   "start_url": "/converse-pages/",
   "background_color": "#397491",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/converse-pages/",
   "theme_color": "#397491"
 }
